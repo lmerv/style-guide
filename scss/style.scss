@@ -1,0 +1,12 @@
+// One file to rule them all
+@charset "UTF-8";
+//  VARIABLES : MIXINS & EXTEND BOOTSTRAP
+@import 'variables/mes-variables';
+// THEME INFO
+@import 'custom/theme-info';
+//Bootstrap
+@import 'vendor/bootstrap/bootstrap';
+@import 'vendor/bootstarp-icons/bootstrap-icons.scss';
+//  PERSONNALISATION
+@import 'fcustom/font-face';
+@import 'custom/global';

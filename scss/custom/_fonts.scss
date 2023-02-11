@@ -1,0 +1,43 @@
+// Add font-family
+/* dm-serif-display-regular - latin */
+@font-face {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/dm-serif-display-v10-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../assets/fonts/dm-serif-display-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/dm-serif-display-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/dm-serif-display-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/dm-serif-display-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/dm-serif-display-v10-latin-regular.svg#DMSerifDisplay') format('svg'); /* Laegacy iOS */
+    font-display: swap;
+  }
+  /* dm-serif-display-italic - latin */
+  @font-face {
+    font-family: 'DM Serif Display';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../assets/fonts/dm-serif-display-v10-latin-italic.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../assets/fonts/dm-serif-display-v10-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/dm-serif-display-v10-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/dm-serif-display-v10-latin-italic.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/dm-serif-display-v10-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/dm-serif-display-v10-latin-italic.svg#DMSerifDisplay') format('svg'); /* Legacy iOS */
+    font-display: swap;
+  }
+  // icones
+  @font-face {
+    font-display: block;
+    font-family: "bootstrap-icons";
+    src: url("../../assets/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47") format("woff2"),
+          url("../../assets/fonts/bootstrap-icons.woff?24e3eb84d0bcaf83d77f904c78ac1f47") format("woff");
+    font-display: swap;
+  }
+  // font
+  $font-custom:       'DM Serif Display', serif;
+  // we add to root
+  :root {
+    --bs-font-family-custom: 'DM Serif Display', serif;;
+  }

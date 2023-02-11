@@ -1,0 +1,110 @@
+body {
+    background-color: $gray-100;
+    @extend .lh-lg;
+    .navbar {
+      @include bg-p4;
+      .navbar-brand,
+      .offcanvas-title {
+        @extend .invisible;
+      }
+    }
+    main {
+      @extend .container-fluid;
+      @extend .container;
+      > section {
+        @extend .row;
+        // @extend .pt-2;
+        // @extend .pt-md-5;
+        @extend .m-2;
+        @extend .bg-transparent;
+        article {
+          @include back-grad_01;
+          &:hover {
+            @extend .shadow;
+          }
+          > header {
+            @extend .text-capitalize;
+            @extend .bg-transparent;
+            @extend .border-bottom;
+            @extend .border-2;
+            @include bc-p4;
+            h2 {
+              @include my-fonts-italic;
+              @extend .h1;
+              @extend .text-end;
+              @extend .pt-5;
+              @extend .pe-5;
+            }
+          }
+          .article-body {
+            @extend .mt-2;
+            @extend .p-1;
+            @extend .p-md-5;
+            @extend .pb-0;
+            img {
+              @extend .d-block;
+              @extend .w-100;
+              @extend .img-fluid;
+            }
+          }
+          > footer {
+            @extend .row;
+            @extend .bg-transparent;
+            @extend .mt-2;
+            @extend .ps-3;
+            @extend .p-md-5;
+            p {
+              @extend .col-md-4;
+            }
+          }
+        }
+      }
+      &#frontpage {
+        > section {
+          @extend .row;
+          // @extend .g-5;
+          > div {
+            @extend .col-md-6;
+          }
+          article {
+            // @extend .col-6;
+            // @extend .m-0;
+            @extend .p-0;
+            > footer {
+              @extend .p-md-0;
+              p {
+                @extend .ps-3;
+                @extend .col-12;
+              }
+            }
+          }
+        }
+      }
+      aside,
+      .nav-pagination {
+        @extend.container;
+        @extend .d-flex;
+        @extend .justify-content-center;
+        @extend .align-self-center;
+        @extend .mt-2;
+        @extend .mt-md-5;
+      }
+    }
+    > footer {
+      @extend .container-fluid;
+      @extend .bg-secondary;
+      @extend .border-3;
+      @extend .border-top;
+      @include bc-p4;
+      @extend .py-2;
+      @extend .py-md-5;
+      @extend .ps-2;
+      @extend .ps-md-5;
+      @extend .mt-2;
+      @extend .mt-md-5;
+      p {
+        @extend .text-light;
+        
+      }
+    }
+  }
